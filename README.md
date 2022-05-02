@@ -101,6 +101,47 @@ but it's without Rails or any framework :v very simple
 1. Ruby
 2. Postgresql (you can change if not like. only support SQL databases)
 
+
+### What Does a Rails App Look Like? (5 minutes / 0:55)
+
+As soon as we generate a Rails app, you can see there are already many folders
+and files generated from just the one command (`rails new`)
+
+![Rails folder structure](images/rails_folders.png)
+
+While all these files may be daunting at first, you're already familiar with many of these components from your work with Sinatra. Additionally, you can ignore a lot of the other stuff until you need to
+incorporate some weird gem or dependency. So we started learning about *"convention
+over configuration"* during the class for Active Record.
+
+As we scale to a Rails size application, We can quickly see the need for conventions in such a massive
+framework. Specifically for folder and file structure, Rails can be quite
+particular about how we name things. Throughout this week we'll be going through
+a bunch of different conventions we need to follow.
+
+The first folder we'll talk about is the `app` folder...
+
+![Rails app folder](images/rails_app.png)
+
+This folder is the the most important folder in your entire application. It will contain
+most of the programs functionality.
+
+- **`assets`**: this will be where all of your CSS, JS, and image files belong.
+- **`controllers`**: this folder will contain all controllers.
+- **`models`**: this folder will contain our models.
+- **`views`**: this folder contains all of the views in this application.
+
+The `bin` folder contains binstubs. Not going over this in the scope of this
+class, but basically they're used as wrappers around ruby gem executables - like
+`pry` - to be used in lieu of `bundle exec`. Their purpose is to prepare the environment for the executable.
+
+The `config` is another folder that's pretty important. The file you'll most be
+visiting is `routes.rb` This is the router in rMVC.
+
+The `db` folder is one you'll be working in for a bit of time as well. This
+contains the schema and seed files. Additionally, it will also contain your migrations,
+which you'll be going over in the next class.
+
+In the root directory of the application you will also see a `Gemfile` and, if you've run `bundle install`, `Gemfile.lock`
 ## Setup
 set configuration, db ,etc 
 > ```config/config.rb```
