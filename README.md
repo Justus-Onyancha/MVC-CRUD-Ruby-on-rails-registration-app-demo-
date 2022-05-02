@@ -48,6 +48,8 @@ Rails was created with the concept of convention over configuration and this hol
 
 ![MVC Request Flow](https://s3.amazonaws.com/flatiron-bucket/readme-lessons/mvc_flow_updated.png)
 
+![2nd MVC Flow](https://camo.githubusercontent.com/65ef3890e303cd064edaa479070dcf7403b246c0e8a1ba6150900c5461c2d239/687474703a2f2f692e737461636b2e696d6775722e636f6d2f5366324f512e706e67)
+
 ## Roles and Responsibilities
 
 ### Models
